@@ -3,7 +3,7 @@
 +------------------+       +-----------------+
 | +getAtts()       |       | -name: String   |
 | +getTotalPrice() |       | -price: double  |
-+------------------+       | -quantity: int  |
++------------------+       | 		     |
        ^                   +-----------------+
        |                   | +getAtts()      |
        |                   | +getTotalPrice()|
