@@ -9,15 +9,15 @@ public class ClassLeader implements Subject{
         observers = new ArrayList<>();
     }
 
-    public void registerObserver(Observer o) {
+    public void attach(Observer o) {
         observers.add(o);
     }
 
-    public void removeObserver(Observer o) {
+    public void detach(Observer o) {
         observers.remove(o);
     }
 
-    public void notifyObservers(String message) {
+    public void notify(String message) {
         for (Observer o : observers) {
             o.update(message);
         }

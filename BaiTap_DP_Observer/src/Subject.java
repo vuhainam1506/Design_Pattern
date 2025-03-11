@@ -1,5 +1,5 @@
 public interface Subject {
-    void registerObserver(Observer o);
-    void removeObserver(Observer o);
-    void notifyObservers(String message);
+    void attach(Observer o);
+    void detach(Observer o);
+    void notify(String message);
 }
